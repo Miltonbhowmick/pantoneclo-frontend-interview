@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "price": 699,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A high-end smartphone with a great camera.",
+    "tags": [
+      "New Arrivals",
+      "Trending"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "T-shirt",
+    "price": 25,
+    "category": "clothing",
+    "image": "https://via.placeholder.com/150",
+    "description": "A comfortable cotton t-shirt.",
+    "tags": [
+      "Men",
+      "New Arrivals"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Jeans",
+    "price": 40,
+    "category": "clothing",
+    "image": "https://via.placeholder.com/150",
+    "description": "Stylish and comfortable denim jeans.",
+    "tags": [
+      "Trending",
+      "Men"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wireless Headphones",
+    "price": 199,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "Noise-cancelling wireless headphones for an immersive audio experience.",
+    "tags": [
+      "New Arrivals",
+      "Trending"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sneakers",
+    "price": 75,
+    "category": "footwear",
+    "image": "https://via.placeholder.com/150",
+    "description": "Comfortable sneakers designed for all-day wear.",
+    "tags": [
+      "Men",
+      "New Arrivals"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Leather Jacket",
+    "price": 150,
+    "category": "clothing",
+    "image": "https://via.placeholder.com/150",
+    "description": "A sleek leather jacket perfect for the winter season.",
+    "tags": [
+      "Men",
+      "Trending"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Smartwatch",
+    "price": 250,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A smartwatch with fitness tracking and notifications.",
+    "tags": [
+      "New Arrivals",
+      "Trending"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sunglasses",
+    "price": 30,
+    "category": "accessories",
+    "image": "https://via.placeholder.com/150",
+    "description": "Stylish sunglasses to protect your eyes from the sun.",
+    "tags": [
+      "New Arrivals"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Running Shoes",
+    "price": 90,
+    "category": "footwear",
+    "image": "https://via.placeholder.com/150",
+    "description": "Durable running shoes designed for athletes.",
+    "tags": [
+      "Men",
+      "Trending"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Backpack",
+    "price": 50,
+    "category": "accessories",
+    "image": "https://via.placeholder.com/150",
+    "description": "A durable and stylish backpack for everyday use.",
+    "tags": [
+      "New Arrivals"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Blazer",
+    "price": 120,
+    "category": "clothing",
+    "image": "https://via.placeholder.com/150",
+    "description": "A classic and stylish blazer for formal occasions.",
+    "tags": [
+      "Men"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Laptop",
+    "price": 999,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A high-performance laptop with a powerful processor and great display.",
+    "tags": [
+      "New Arrivals",
+      "Trending"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Bluetooth Speaker",
+    "price": 60,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "Portable Bluetooth speaker with high-quality sound.",
+    "tags": [
+      "Trending"
+    ]
+  }
+]

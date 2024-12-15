@@ -1,0 +1,144 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "price": 699,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A high-end smartphone with a great camera, long battery life, and fast processor.",
+    "specifications": {
+      "screen": "6.5-inch OLED",
+      "camera": "48MP + 12MP dual camera",
+      "processor": "Octa-core 2.8GHz",
+      "battery": "4500mAh"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "price": 999,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A high-performance laptop with a powerful processor and excellent display.",
+    "specifications": {
+      "screen": "15.6-inch Full HD",
+      "processor": "Intel Core i7",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "battery": "8 hours"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Smartwatch",
+    "price": 250,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A smartwatch with fitness tracking, heart rate monitoring, and GPS.",
+    "specifications": {
+      "display": "1.4-inch AMOLED",
+      "sensor": "Heart rate, GPS, SpO2",
+      "battery": "2 days",
+      "waterResistance": "5ATM"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Wireless Headphones",
+    "price": 199,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "Noise-cancelling wireless headphones with deep bass and clear audio.",
+    "specifications": {
+      "driverSize": "40mm",
+      "bluetooth": "5.0",
+      "battery": "20 hours",
+      "weight": "250g"
+    }
+  },
+  {
+    "id": 5,
+    "name": "4K LED TV",
+    "price": 799,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A stunning 4K LED TV with high dynamic range for immersive viewing.",
+    "specifications": {
+      "screen": "55-inch 4K UHD",
+      "resolution": "3840 x 2160",
+      "ports": "3 HDMI, 2 USB",
+      "smartTV": "Yes"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "price": 89,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "Portable Bluetooth speaker with high-quality sound and long battery life.",
+    "specifications": {
+      "outputPower": "20W",
+      "bluetooth": "5.0",
+      "battery": "12 hours",
+      "waterResistance": "IPX7"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Tablet",
+    "price": 399,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A sleek tablet with a 10.1-inch screen, ideal for work and entertainment.",
+    "specifications": {
+      "screen": "10.1-inch Full HD",
+      "processor": "Octa-core 2.0GHz",
+      "ram": "4GB",
+      "storage": "64GB",
+      "battery": "10 hours"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Smartphone Charger",
+    "price": 29,
+    "category": "Accessories",
+    "image": "https://via.placeholder.com/150",
+    "description": "Fast-charging smartphone charger with USB-C port.",
+    "specifications": {
+      "input": "AC 100-240V",
+      "output": "5V 3A, 9V 2A",
+      "cableLength": "1m",
+      "compatibility": "Universal"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Game Console",
+    "price": 499,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150",
+    "description": "A next-gen game console with 4K gaming support and an extensive game library.",
+    "specifications": {
+      "storage": "1TB SSD",
+      "graphics": "4K UHD",
+      "controller": "Wireless",
+      "ports": "HDMI, USB-C"
+    }
+  },
+  {
+    "id": 10,
+    "name": "External Hard Drive",
+    "price": 120,
+    "category": "Accessories",
+    "image": "https://via.placeholder.com/150",
+    "description": "Portable 2TB external hard drive for easy storage and backup.",
+    "specifications": {
+      "capacity": "2TB",
+      "connection": "USB 3.0",
+      "transferSpeed": "5Gbps",
+      "dimensions": "5 x 3 x 0.5 inches"
+    }
+  }
+]
