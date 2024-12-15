@@ -103,11 +103,11 @@ const removeProduct = (id) => {
 
 const toggleTheme = () => {
   theme.global.name.value = darkMode.value ? "darkTheme" : "lightTheme";
-  localStorage.setItem("manzaar_darktheme", darkMode.value);
+  localStorage.setItem("pantoneclo_darktheme", darkMode.value);
 };
 
 const initTheme = () => {
-  const darkTheme = JSON.parse(localStorage.getItem("manzaar_darktheme"));
+  const darkTheme = JSON.parse(localStorage.getItem("pantoneclo_darktheme"));
   if (darkTheme === true) {
     darkMode.value = true;
     toggleTheme();
