@@ -49,7 +49,7 @@
             <v-btn
               @click="addToCart"
               class="text-capitalize"
-              variant="contained"
+              variant="tonal"
               color="primary"
               elevation="2"
             >
