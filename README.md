@@ -23,6 +23,12 @@ Pantoneclo is a frontend project built to simulate an e-commerce platform with a
 - **Product Specifications**: Displays dynamic product specifications (if available) such as screen size, battery life, camera, etc.
 - **Pinia Store**: Centralized state management for cart and wishlist data.
 - **Darkmode**
+- **Sorting by Name, Price**
+
+## Limitations
+
+- Need to check data available and then show the DOM.
+- Modify design to look more good.
 
 ## Getting Started
 
