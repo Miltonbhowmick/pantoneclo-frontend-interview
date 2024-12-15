@@ -1,17 +1,25 @@
 <template>
   <v-container>
-    <v-app-bar app color="primary" elevate-on-scroll dark class="px-16">
+    <!-- Header Bar -->
+    <v-app-bar app color="primary" elevate-on-scroll dark class="px-4">
       <!-- Logo and Navigation -->
-      <v-row class="align-center">
-        <v-col cols="auto">
+      <v-row class="align-center" no-gutters>
+        <v-col class="d-none d-md-flex" cols="auto">
           <nuxt-link to="/" class="text-h6 font-weight-bold text-white"
             >PantonecloEcom</nuxt-link
           >
         </v-col>
-        <v-col cols="auto" class="d-none d-md-flex">
-          <v-btn text class="text-white text-capitalize" to="/products"
-            >Stores</v-btn
-          >
+        <v-col class="d-none d-md-flex" cols="auto">
+          <v-btn text class="text-white text-capitalize" to="/products">
+            Stores
+          </v-btn>
+        </v-col>
+
+        <!-- Hamburger Menu for Mobile -->
+        <v-col class="d-flex d-md-none" cols="auto">
+          <v-btn icon @click="toggleMobileMenu">
+            <v-icon color="white">mdi-menu</v-icon>
+          </v-btn>
         </v-col>
       </v-row>
 
@@ -19,7 +27,7 @@
       <v-spacer></v-spacer>
 
       <!-- Cart and Wishlist Icons -->
-      <v-row class="align-center justify-end px-1">
+      <v-row class="align-center justify-end px-3">
         <v-switch
           v-model="darkMode"
           prepend-icon="mdi-white-balance-sunny"
@@ -28,9 +36,9 @@
           hide-details
           class="px-0"
           @change="toggleTheme"
-        >
-        </v-switch>
-        <v-btn to="/wishlist">
+        ></v-switch>
+
+        <v-btn v-if="!isMobile" to="/wishlist">
           <v-badge :content="wishlistItemCount" color="pink" overlap>
             <v-icon color="white">mdi-heart</v-icon>
           </v-badge>
@@ -55,11 +63,10 @@
             <div class="py-3 d-flex justify-space-between">
               <div>
                 <v-list-item-title>{{ item.name }}</v-list-item-title>
-                <v-list-item-subtitle
-                  >{{ item.quantity }} x ${{ item.price }}</v-list-item-subtitle
-                >
+                <v-list-item-subtitle>
+                  {{ item.quantity }} x ${{ item.price }}
+                </v-list-item-subtitle>
               </div>
-
               <v-btn icon @click="removeProduct(item.id)">
                 <v-icon color="error">mdi-delete</v-icon>
               </v-btn>
@@ -72,6 +79,21 @@
         </v-list>
       </v-navigation-drawer>
     </client-only>
+
+    <!-- Mobile Drawer for Navigation -->
+    <v-navigation-drawer v-model="mobileMenu" temporary>
+      <v-list>
+        <v-list-item to="/">
+          <v-list-item-title>Home</v-list-item-title>
+        </v-list-item>
+        <v-list-item to="/products">
+          <v-list-item-title>Stores</v-list-item-title>
+        </v-list-item>
+        <v-list-item to="/wishlist">
+          <v-list-item-title>Wishlist</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
   </v-container>
 </template>
 
@@ -80,8 +102,10 @@ import { useTheme } from "vuetify";
 const sellStore = useSellStore();
 const commonStore = useCommonStore();
 const cartSidebar = ref(false);
+const mobileMenu = ref(false);
 const theme = useTheme();
 var darkMode = ref(false);
+const isMobile = ref(false);
 
 const cartItems = computed(() => sellStore.cartItems);
 commonStore.loadWishlistFromCookies();
@@ -117,8 +141,19 @@ const initTheme = () => {
   }
 };
 
+// Mobile menu toggle
+const toggleMobileMenu = () => {
+  mobileMenu.value = !mobileMenu.value;
+};
+
 onMounted(() => {
   initTheme();
+
+  // Check if mobile
+  isMobile.value = window.innerWidth < 960;
+  window.addEventListener("resize", () => {
+    isMobile.value = window.innerWidth < 960;
+  });
 });
 </script>
 
@@ -128,5 +163,11 @@ onMounted(() => {
 }
 .v-navigation-drawer {
   max-width: 400px;
+}
+
+@media (max-width: 960px) {
+  .v-app-bar {
+    padding: 0;
+  }
 }
 </style>
